@@ -1,0 +1,74 @@
+.contact{
+	padding: 115px 0 120px;
+	text-align: center;
+	background: url('../images/bg4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;  
+	&-txt{
+		padding-bottom: 60px;
+		max-width: 570px;
+		margin: 0 auto;
+		color: $c-inverse;
+		font-size: 16px;
+		line-height: 30px;
+		opacity: .8;
+	}
+	&-form{
+		&-wrap{
+			max-width: 770px;
+			padding: 70px;
+			margin: 0 auto;
+			border-radius: 12px;
+			background: $c-inverse;
+		}
+		&-btn{
+			&-wrap{
+				max-width: 165px;
+				margin: 0 auto;
+				padding-top: 10px;     
+			}
+		}
+		&-lbl {
+			position: relative;
+			background: $c-grey-light;
+			display: block;
+			span {
+				display: block;
+				position: absolute;
+				right: 12px;
+				top: 50%;
+				margin-top: -3px;
+				width: 0;
+				height: 0;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 6px solid $c-select;
+				z-index: 1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1023px){
+	.contact{
+		padding: 50px 0;
+		&-txt{
+			padding-bottom: 30px;  
+		}
+	}
+}
+
+@media screen and (max-width: 760px){
+	.contact{
+		padding: 30px 0;
+		&-txt{
+			padding-bottom: 30px;  
+		}
+		&-form {
+			&-wrap {
+				padding: 30px;
+			}
+		}
+	}
+}

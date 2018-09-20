@@ -1,0 +1,100 @@
+.header{
+	position: absolute;  
+	right: 0;
+	left: 0;
+	top: 0;
+	&-blk{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;  
+		padding-top: 20px;
+		color: $c-inverse;
+	}
+	&-logo{
+		font-weight: 800;
+		font-size: 20px;
+	}
+	&-r{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&-nav{
+		&-lst{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-i{
+			padding-right: 25px;
+			font-size: 15px;
+			&:hover{
+				transition: opacity .1s;
+				opacity: .8;
+			}
+		}
+		&-lnk {
+			display: block;
+		}
+	}
+	&-menu{
+		padding-left: 30px;
+		img {
+			display: inline;
+		}
+	}
+	&-btn{
+		&-wrap{
+			max-width: 132px;
+			min-width: 132px;
+		}
+	}
+}
+
+@media screen and (max-width: 740px){
+	.header{
+		&-blk{
+			display: block;
+			padding-top: 16px;
+		}
+		&-r{
+			display: block;
+		}
+		&-l{
+			text-align: center;
+		}
+		&-nav{
+			&-lst{
+				justify-content: center;
+			}
+			&-i{
+				padding-right: 10px;
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+		&-menu{
+		    position: absolute;  
+		    right: 30px;
+		    top: 30px;
+		}
+		&-btn{
+			&-wrap{
+				margin: 0 auto;
+				margin-top: 15px;	
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 450px){
+	.header {
+		&-btn {
+			&-wrap {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+	}
+}

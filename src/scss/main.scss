@@ -1,0 +1,101 @@
+/* COLORS */
+@import "components/colors";
+/* END COLORS */
+
+/* BUTTONS */
+@import "components/buttons";
+/* END BUTTONS */
+
+/* INPUTS */
+@import "components/inputs";
+/* END INPUTS */
+
+/* TITLES */
+@import "components/titles";
+/* END TITLES */
+
+/* RESET */
+@import "components/reset";
+/* END RESET */
+
+/* HEADER */
+@import "blocks/header";
+/* END HEADER */
+
+/* FOOTER */
+@import "blocks/footer";
+/* END FOOTER */
+
+/* TABLET */
+@import "blocks/tablet";
+/* END TABLET */
+
+/* HIGHTLIGHTS */
+@import "blocks/hightlights";
+/* END HIGHTLIGHTS */
+
+/* HIGHTLIGHTS2 */
+@import "blocks/hightlights2";
+/* END HIGHTLIGHTS2 */
+
+/* DOWNLOAD  */
+@import "blocks/download";
+/* END DOWNLOAD */
+
+/* VIDEO  */
+@import "blocks/video";
+/* END VIDEO */
+
+/* PRICES  */
+@import "blocks/prices";
+/* END PRICES */
+
+/* CONTACT  */
+@import "blocks/contact";
+/* END CONTACT */
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.3s;
+}
+html,
+body{
+  height: 100%;
+  line-height: 2;
+  font-size: 14px;
+  color:$c-grey;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.container{
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.shadow{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+.tel{
+  pointer-events: none;
+}
+
+@media screen and (max-width: 680px){
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tel{
+    pointer-events: auto;
+  }
+}
+

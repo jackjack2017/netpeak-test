@@ -1,0 +1,55 @@
+.ttl{
+	font-size: 35px;
+	line-height: 50px;
+	text-align: center;
+	color: $c-main;
+	padding-bottom: 15px;
+	font-weight: 300;
+	&-part{
+		font-weight: 800;
+	}
+	&-inverse{
+		@extend .ttl;
+		color: $c-inverse;
+		font-weight: 300;
+		&-part{
+			@extend .ttl-part;
+		}
+	}
+	&-s{
+		@extend .ttl;
+		font-size: 20px;
+		padding-bottom: 20px;
+		&-part{
+			@extend .ttl-part;
+		}
+	}
+	&-xs{
+		@extend .ttl;
+		font-size: 16px;
+		padding-bottom: 5px;
+		text-align: left;
+		line-height: 1.5;
+		font-weight: 300;
+		&-part{
+			@extend .ttl-part;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px){
+	.ttl{
+		font-size: 25px;
+		line-height: 40px;
+		&-xs{
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 740px){
+	.ttl{
+		font-size: 20px;
+		line-height: 30px;
+	}
+}

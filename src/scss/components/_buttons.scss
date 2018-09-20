@@ -1,0 +1,48 @@
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 50px;
+	font-weight: 700;
+	font-size: 17px;
+	color: $c-inverse;
+	text-align: center;
+	background-color: rgba(255,141,100,1);
+	background-image: $c-grad1;
+	width: 100%;
+	border: none;
+	padding: 0 15px;
+	border-radius: 6px;
+	letter-spacing: 1px;
+	&:hover{
+		transition: opacity.3s;
+		opacity: .8;
+	}
+	&-inverse{
+		@extend .btn;
+		color: $c-main;
+		background: $c-inverse;
+		&.__up {
+			text-transform: uppercase;
+			line-height: 40px;
+			font-size: 14px;
+		}
+	}
+}
+
+button{
+	outline: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 760px){
+	.btn{
+		font-size: 13px;  
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.btn{
+		font-size: 17px;
+	}
+}
