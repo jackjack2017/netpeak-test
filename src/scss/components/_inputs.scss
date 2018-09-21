@@ -84,4 +84,8 @@ textarea{
 	.inp-group{
 		display: block;
 	}
+
+	.inp-wrap:first-child{
+		margin-right: 0;
+	}
 }
